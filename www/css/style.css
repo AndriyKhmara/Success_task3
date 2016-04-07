@@ -25,25 +25,28 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 5s slidy infinite; 
+  animation: slidy 20s ease-in-out 5s infinite alternate; 
 }
 nav li {
-    padding: 0 15px 0 15px;
+    padding: 30px 15px 0 15px;
     font-size: 2em;
     list-style-type: none;
     display: inline-block;
-
 }
-nav {
+nav ul{
     text-align: center;
     color: #fff;
-    
-    transition: color 3s ease-out;
+    margin:0 auto; 
+    position: relative;
+    height: 100px; width: 100%;
+    border-bottom: 20px solid #333;
+    top: -100px;
+    transition-property: top, color;
+    transition-duration: 1s, 10s;
 }
 nav ul:hover {
+    top: 0;
     color: #000;
-    
-    
 }
 .wrpper {
     font: Georgia,serif;
