@@ -10,7 +10,7 @@ div.content {
 	display: inline-block;
 	position: relative;
 	left: 10%;
-	margin: 50px auto 0;
+	margin: 50px auto 50px auto;
 }
 #button {	
 	position: fixed;
@@ -30,16 +30,26 @@ div.content {
    	0 1px rgba(255,255,255,.2) inset,
    	0 3px 5px rgba(0,1,6,.5),
    	0 0 1px 1px rgba(0,1,6,.2);
-  	transition: .2s ease-in-out;
+  	transition :.2s ease-in-out;
 }
+
 .header{
-	color: rgba(0, 0, 0, 0)
+	color: rgba(0, 0, 0, 0);
+	background: green;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	z-index: 1;
 }
+/*-------------------------------------------------320px--------------------------------------------------------------*/
+
 @media screen and (orientation:portrait){
-@media screen and (max-width: 480px ){
+@media screen and (max-width: 320px ){
 
 	div.content {
-		width: 90%;
+		width: 100%;
 		margin: 0px auto 0;
 		display:block;
 		left: 0%;
@@ -51,8 +61,8 @@ div.content {
 	.header {
 		background: green;
 		height:70px;
-		color:black; 
-	}
+		color:black;
+			}
 	#button {	
 		height:70px; 
 		width:70px;
@@ -71,6 +81,7 @@ div.content {
 	  	box-shadow:none;
 	  	transition: .2s ease-in-out;
 	  	position:fixed;
+		z-index: 2; 
 	}
 	#button:hover{
 		height:70px; 
@@ -99,6 +110,75 @@ div.content {
 	 	50%{ background: rgb(0, 60, 0) ; }
 	 	75%{ background: rgb(0, 40, 0) ; }
 	 	100%{ background: rgb(0, 20, 0) ; }
+	 }
+  }
+}
+/*-------------------------------------------------480px--------------------------------------------------------------*/
+@media screen and (orientation:portrait){
+@media screen and (max-width: 480px ){
+
+	div.content {
+		width: 100%;
+		margin: 0px auto 0;
+		display:block;
+		left: 0%;
+	}
+	body {
+		padding:0px;
+		margin:0px;
+	}
+	.header {
+		background: rgb(60, 60, 60);
+		height:70px;
+		color:black;
+			}
+	#button {	
+		height:70px; 
+		width:70px;
+		top:0px;
+		left:2%;
+		display: inline-block;
+		font-size: 0px;
+	  	font-weight: 0px;
+	  	color: rgb(209,209,217);
+	  	text-decoration: none;
+	  	text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+	  	padding: .0em 1em;
+	  	outline: none;
+	  	border-radius: 0px;
+	  	background: rgb(100, 100, 100);
+	  	box-shadow:none;
+	  	transition: .2s ease-in-out;
+	  	position:fixed;
+		z-index: 2; 
+	}
+	#button:hover{
+		height:70px; 
+		width:70px;
+		top:0px;
+		left:2%;
+		display: inline-block;
+		font-size: 0px;
+	  	font-weight: 0px;
+	  	color: rgb(209,209,217);
+	  	text-decoration: none;
+	  	text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+	  	padding: .0em 1em;
+	  	outline: none;
+	  	border-radius: 0px;
+	  	background: rgb(100, 100, 100);
+	  	box-shadow:none;
+	  	transition: .2s ease-in-out;
+	  	position:fixed;
+	  	animation-name:button;
+	  	animation-duration: 0.1s; 
+	}
+	 @keyframes button{
+	 	0%{ background: rgb(100, 100, 100) ; }
+	 	25%{ background: rgb(80, 80, 80) ; }
+	 	50%{ background: rgb(60, 60, 60) ; }
+	 	75%{ background: rgb(40, 40, 40) ; }
+	 	100%{ background: rgb(20, 20, 20) ; }
 	 }
   }
 }
