@@ -97,6 +97,9 @@ nav li {
     background-image: url(../img/work-01.jpg);
     background-size: cover;
 }
+#patt1:hover {
+    animation: ball 40s linear infinite;
+}
 #patt2 {
     background-image: url(../img/work-02.jpg);
     background-size: cover;
@@ -129,4 +132,12 @@ nav li {
     font: Georgia,serif;
     margin: 0 auto;
     text-align: center;
-    }
+}
+@keyframes ball {
+     from {
+         background-position: 3000px 90%, 180% 40%, 0 0;
+     }
+     to {
+         background-position: -2000px 90%, -300px 20%, 0 0;
+     }
+ }  
