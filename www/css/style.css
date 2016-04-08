@@ -60,7 +60,7 @@ nav li {
 .team ul, .patt ul {
     padding: 0;
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
 }
 .team li {
     display: inline-block;
