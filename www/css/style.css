@@ -68,7 +68,7 @@ nav li {
     border-radius: 25px;
 	height: 20vw;
     width: 20vw;
-    margin: 15px;
+    margin: 10px;
 }
 #team1 {
     background-color: red;
@@ -80,7 +80,7 @@ nav li {
     border: 5px solid #1E1E1E;
 	height: 30vw;
     width: 30vw;
-    margin: 15px;
+    margin: 5px;
 }
 #patt1 {
     background-image: url(../img/work-01.jpg);
