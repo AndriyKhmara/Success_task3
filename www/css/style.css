@@ -51,7 +51,7 @@ nav ul:hover {
 }
 nav li {
     padding: 30px 15px 0 15px;
-    font-size: 2em;
+    font-size: 3vw;
     display: inline-block;
 }
 .team, .patt {
@@ -71,9 +71,20 @@ nav li {
     margin: 10px;
 }
 #team1 {
-    background-color: red;
+    background-image: url(../img/team-01.jpg);
+    background-size: cover;
+}
+#team2 {
     background-image: url(../img/team-02.png);
-    background-size: cover; /*contain; cover;*/
+    background-size: cover;
+}
+#team3 {
+    background-image: url(../img/team-03.png);
+    background-size: cover;
+}
+#team4 {
+    background-image: url(../img/team-04.jpg);
+    background-size: cover;
 }
 .patt li {
     display: inline-block;
