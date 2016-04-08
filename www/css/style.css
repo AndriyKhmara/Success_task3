@@ -35,14 +35,14 @@ nav li {
 }
 nav ul{
     text-align: center;
-    color: #fff;
+    color: #66CCCC;
     margin:0 auto; 
     position: relative;
     height: 100px; width: 100%;
-    border-bottom: 20px solid #333;
+    border-bottom: 20px solid rgba(0, 134, 139, 0.85);
     top: -100px;
     transition-property: top, color;
-    transition-duration: 1s, 10s;
+    transition-duration: 1s, 8s;
 }
 nav ul:hover {
     top: 0;
@@ -92,44 +92,50 @@ h2 {
 .cell {
 	display: table-cell;
 	width: 25%;
+
 }
 .cell img{
-	
+	width: 100%
 }
+div.cell a {
+    text-decoration: none;
+}
+
+div.cell a p:hover {
+    text-decoration: none;
+    background:rgba(50, 82, 89, 1);
+    color: #4F94CD;
+}
+
 div.row p {
-	background:rgba(71, 82, 89, 0.85);
+	background:rgba(0, 134, 139, 0.85);
+    border-radius: 50%;
     display: block;
     opacity: 0.9;    
     color: white;
 	text-align: center;	
 	position: relative; 	
 	font-size: 20px;
-	top: -150px;
+	top: -70px;
 	overflow: hidden;
 	padding: 10px;
-    
+    font-family: 'Arial';
+    text-decoration: none;
 }
-div.row a:hover {
-	text-decoration: none;
-}
-div.row a p:hover {
-	text-decoration: none;
-	background:rgba(50, 82, 89, 1);
-}
+
 /*---------------------team-------------------------------------*/
-.holder
-{
-    border: 6px solid #4F94CD;
+.holder {
+    border: 1px solid #4F94CD;
     border-radius: 10%;
     float: left;
     margin: 10px;
     position: relative;   
     overflow: hidden;
     box-shadow: 0px 0px 5px #333333;   
-  transition: 0.5s Ease;   
+    transition: 0.5s Ease;   
 }
 .col {
-  border-bottom: 6px solid #4F94CD;
+  border-bottom: 1px solid #4F94CD;
    border-radius: 5%;
 }
 .caption
@@ -137,9 +143,9 @@ div.row a p:hover {
     line-height: 20px;
 }
 .caption:hover {
-    color: #0000CD;
+    color: #00008B;
     line-height: 20px;
-
+    opacity: 0.6;  
 }
 .caption > h2 {
     position: absolute;
@@ -147,6 +153,9 @@ div.row a p:hover {
     left: 10px;
     font-size: 20px;
 }
-#team {
 
-}
+footer .content {
+background: rgba(0, 134, 139, 0.85);
+height: 15%;
+color: white;
+  }
