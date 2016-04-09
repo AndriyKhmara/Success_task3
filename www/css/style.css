@@ -26,7 +26,7 @@ li {
     z-index: 1;
     text-align: center;
     margin: 0 auto;
-    width: 100%;
+    width: 98%;
 }
 #slide_text h1 {display: block;
     font-size: 5vw;
@@ -40,10 +40,12 @@ li {
     background-color:  whitesmoke;
     opacity: .3;
 }
-div#slider { 
+div#slider {
+    border: 3px dotted crimson;
+    margin: 0 1%;
     overflow: hidden; 
 }
-div#slider figure img { 
+div#slider figure img {height: 16%;
     width: 25%; float: left; 
 }
 div#slider figure { 
