@@ -13,6 +13,7 @@ body {
     margin: 0; 
     background: rgba(173,216,230,0.7);
 }
+<<<<<<< HEAD
 span.layout-indicator:before {
     float: right;
     width: 65px;
@@ -29,9 +30,41 @@ span.layout-indicator:before {
                     box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
 div#slider { 
+=======
+a, a:visited {
+    text-decoration:none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+#slide_text {
+    position: absolute;
+    color: #ed899d;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    width: 98%;
+}
+#slide_text h1 {display: block;
+    font-size: 5vw;
+    top: 13%;    
+}
+#slide_text h2 {display: block;
+    font-size: 3vw;
+    top: 50%;
+}
+#slide_text h1:hover,#slide_text h2:hover {
+    background-color:  whitesmoke;
+    opacity: .3;
+}
+div#slider {
+    border: 3px dotted crimson;
+    margin: 0 1%;
+>>>>>>> 38b90d8be644b261249dcf7f666ac63afc1fa0dd
     overflow: hidden; 
 }
-div#slider figure img { 
+div#slider figure img {height: 16%;
     width: 25%; float: left; 
 }
 div#slider figure { 
@@ -41,28 +74,32 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: slidy 20s ease-in-out 5s infinite alternate; 
-}
-nav li {
-    padding: 30px 15px 0 15px;
-    font-size: 2em;
-    list-style-type: none;
-    display: inline-block;
+  animation: slidy 30s ease-in-out 3s infinite; 
 }
 nav ul{
     text-align: center;
     color: #fff;
-    margin:0 auto; 
+    margin: 0 auto; 
+    padding: 0;
     position: relative;
-    height: 100px; width: 100%;
-    border-bottom: 20px solid #333;
-    top: -100px;
+    height: 9vh; 
+    border-bottom: 1.5vh solid #333;
+    top: -7vh;
     transition-property: top, color;
     transition-duration: 1s, 10s;
 }
 nav ul:hover {
     top: 0;
     color: #000;
+}
+nav li {
+    vertical-align: top;
+    padding: 0 1vw;
+    font-size: 2.2vw;
+    display: inline-block;
+}
+nav li a:hover {
+    color: crimson;
 }
 #team li {
     display: inline-block;
@@ -311,10 +348,19 @@ article, section {
 
         }
 
+<<<<<<< HEAD
         @media screen and (max-width: 736px) {
         span.layout-indicator:before {    
         content: "736+";
 }
+=======
+        @media screen and (max-width: 769px) {
+            
+            nav ul {
+                top: 0;
+                color: #000;
+            }
+>>>>>>> 38b90d8be644b261249dcf7f666ac63afc1fa0dd
             .tiles {
                 margin: -1.25em 0 0 -1.25em;
             }
@@ -330,7 +376,6 @@ article, section {
                         -ms-transform: scale(1.0);
                         transform: scale(1.0);
                     }
-
         }
 
         @media screen and (max-width: 480px) {
