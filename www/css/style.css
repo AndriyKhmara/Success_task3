@@ -20,6 +20,9 @@ a, a:visited {
 li {
     list-style-type: none;
 }
+img.patt_img {
+    width: 50%;
+}
 #slide_text {
     position: absolute;
     color: #ed899d;
@@ -305,6 +308,9 @@ article, section {
 }
 
 @media screen and (max-width: 1024px) {
+    img.patt_img {
+    width: 65%;
+}
     span.resolution:before {      
         content: "1024+";
     }
@@ -318,6 +324,9 @@ article, section {
 }
 
 @media screen and (max-width: 769px) {
+    img.patt_img {
+    width: 80%;
+}
     nav ul{
         height: 4vh;
     }
@@ -346,6 +355,9 @@ article, section {
 }
 
 @media screen and (max-width: 480px) {
+    img.patt_img {
+    width: 100%;
+}
     span.resolution:before {      
         content: "480+";
 }
