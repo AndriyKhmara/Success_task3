@@ -13,6 +13,21 @@ body {
     margin: 0; 
     background: rgba(173,216,230,0.7);
 }
+span.layout-indicator:before {
+    float: right;
+    width: 65px;
+    height: 35px;
+    border-left: 1px solid rgba(242,242,242, 0.95);
+    border-bottom: 1px solid rgba(242,242,242, 0.95);
+    content: "1280+";
+    
+    -webkit-background-size: 40px auto;
+         -o-background-size: 40px auto;
+            background-size: 40px auto;
+    -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.3);
+         -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
 div#slider { 
     overflow: hidden; 
 }
@@ -282,7 +297,9 @@ article, section {
         }
 
         @media screen and (max-width: 1024px) {
-
+        span.layout-indicator:before {    
+        content: "1024+";
+}
             .tiles {
                 margin: -2.5em 0 0 -2.5em;
             }
@@ -295,7 +312,9 @@ article, section {
         }
 
         @media screen and (max-width: 736px) {
-
+        span.layout-indicator:before {    
+        content: "736+";
+}
             .tiles {
                 margin: -1.25em 0 0 -1.25em;
             }
@@ -315,7 +334,9 @@ article, section {
         }
 
         @media screen and (max-width: 480px) {
-
+        span.layout-indicator:before {    
+        content: "480+";
+}
             .tiles {
                 margin: 0;
             }
