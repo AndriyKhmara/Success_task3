@@ -13,24 +13,6 @@ body {
     margin: 0; 
     background: rgba(173,216,230,0.7);
 }
-<<<<<<< HEAD
-span.layout-indicator:before {
-    float: right;
-    width: 65px;
-    height: 35px;
-    border-left: 1px solid rgba(242,242,242, 0.95);
-    border-bottom: 1px solid rgba(242,242,242, 0.95);
-    content: "1280+";
-    
-    -webkit-background-size: 40px auto;
-         -o-background-size: 40px auto;
-            background-size: 40px auto;
-    -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.3);
-         -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.3);
-                    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.3);
-}
-div#slider { 
-=======
 a, a:visited {
     text-decoration:none;
     color: inherit;
@@ -61,7 +43,6 @@ li {
 div#slider {
     border: 3px dotted crimson;
     margin: 0 1%;
->>>>>>> 38b90d8be644b261249dcf7f666ac63afc1fa0dd
     overflow: hidden; 
 }
 div#slider figure img {height: 16%;
@@ -334,9 +315,7 @@ article, section {
         }
 
         @media screen and (max-width: 1024px) {
-        span.layout-indicator:before {    
-        content: "1024+";
-}
+
             .tiles {
                 margin: -2.5em 0 0 -2.5em;
             }
@@ -348,19 +327,12 @@ article, section {
 
         }
 
-<<<<<<< HEAD
-        @media screen and (max-width: 736px) {
-        span.layout-indicator:before {    
-        content: "736+";
-}
-=======
         @media screen and (max-width: 769px) {
             
             nav ul {
                 top: 0;
                 color: #000;
             }
->>>>>>> 38b90d8be644b261249dcf7f666ac63afc1fa0dd
             .tiles {
                 margin: -1.25em 0 0 -1.25em;
             }
@@ -379,9 +351,7 @@ article, section {
         }
 
         @media screen and (max-width: 480px) {
-        span.layout-indicator:before {    
-        content: "480+";
-}
+
             .tiles {
                 margin: 0;
             }
